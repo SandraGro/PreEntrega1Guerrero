@@ -1,16 +1,14 @@
+import { Link } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 
-function NavBar({ cartCount }) {
+function NavBar({cartCount}) {
   return (
-    <nav
-      className="navbar navbar-expand-lg bg-body-tertiary"
-      data-bs-theme="dark"
-    >
+    <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          <img src="src/assets/logo.png" />
+        <Link className="navbar-brand" to="/">
+          <img src="/src/assets/logo.png" alt="Logo" style={{ width: '40px', height: '40px' }} />
           Clothing Store
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -24,22 +22,13 @@ function NavBar({ cartCount }) {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="#">
-              Home
-            </a>
-            <a className="nav-link" href="#">
-              Collection
-            </a>
-            <a className="nav-link" href="#">
-              Sale
-            </a>
-            <a className="nav-link" href="#">
-              Contact
-            </a>
+            <Link className="nav-link" to="/">Home</Link>
+            <Link className="nav-link" to="/category/clothing">Clothing</Link>
+            <Link className="nav-link" to="/category/accessories">Accessories</Link>
           </div>
         </div>
         <div className="d-flex">
-          <CartWidget cartCount={cartCount} />
+          <CartWidget cartCount={cartCount}/>
         </div>
       </div>
     </nav>
