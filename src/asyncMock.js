@@ -44,6 +44,15 @@ const products = [
       stock: 30,
       description: "Stylish accessories to complement any outfit."
     },
+    {
+        id: 6,
+        name: "Accesories",
+        price: 200,
+        category: "accessories",
+        img: "https://static.zara.net/assets/public/7b56/7cb7/11a04fc1a298/a67dcc8f7515/01903202760-e1/01903202760-e1.jpg?ts=1722327256174&w=210",
+        stock: 0,
+        description: "Stylish accessories to complement any outfit."
+      },
   ];
 
   export const getProducts = () => {
