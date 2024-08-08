@@ -14,7 +14,6 @@ export const Checkout = () => {
         
         setLoading(true);
         
-        console.log(db, 'db')
         try {
             const objOrder = {
                 buyer: {
