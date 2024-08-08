@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 export const Cart = () => {
   const { cart, clearCart, totalQuantity, total } = useContext(CartContext);
-  console.log(cart, totalQuantity, total, ' total cart');
 
   if (totalQuantity === 0) {
     return (

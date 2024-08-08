@@ -4,7 +4,6 @@ import { useParams, Link } from "react-router-dom";
 
 import { getDocs, collection, query, where } from "firebase/firestore";
 import { db } from "../../services/firebase/firebaseConfig";
-import { setLogLevel } from "firebase/app";
 
 function ItemListContainer({ greetings }) {
   const [products, setProducts] = useState([]);

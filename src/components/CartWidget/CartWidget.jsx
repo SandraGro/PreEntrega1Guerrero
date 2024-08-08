@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 function CardWidget() {
   const { totalQuantity } = useContext(CartContext);
-  console.log(totalQuantity, 'cartwifget');
   return (
     <>
       <a className="nav-link" href="#">
