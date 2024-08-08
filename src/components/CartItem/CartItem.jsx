@@ -4,9 +4,10 @@ export default function CartItem({id, name, quantity, price}) {
 
   
   return (
-    <article className="CardCartItem">
+    <article className="card border-light mb-3">
       <header className="HeaderCartItem">
-        <h2 className="ItemHeaderCartItem">{name}</h2>
+        <h4 className="ItemHeaderCartItem">{name}</h4>
+        <hr />
       </header>
       <section className="ContainerItemCartItem">
         <p className="ItemCartItem">Cantidad: {quantity}</p>

@@ -11,9 +11,9 @@ export const Checkout = () => {
 
     const createOrder = async ({ name, phone, email }) => {
         console.log(name, phone, email);
-        
+
         setLoading(true);
-        
+
         try {
             const objOrder = {
                 buyer: {
@@ -51,7 +51,7 @@ export const Checkout = () => {
                 } else {
                     outOfStock.push({ id: doc.id, ...dataDoc });
                 }
-            });          
+            });
 
             if (outOfStock.length === 0) {
                 await batch.commit();
@@ -76,7 +76,14 @@ export const Checkout = () => {
     }
 
     if (orderId) {
-        return <h1>Order ID: {orderId}</h1>;
+        return (
+
+            <div>
+                <hr/>
+                <h3>Order ID: <span>{orderId}</span></h3>
+                <hr/>
+            </div>
+        )
     }
 
     return (

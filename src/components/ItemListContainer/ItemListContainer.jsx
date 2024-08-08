@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import { getProducts, getProductsByCategory } from "../../asyncMock";
 import { useParams, Link } from "react-router-dom";
 
 import { getDocs, collection, query, where } from "firebase/firestore";
@@ -14,7 +13,7 @@ function ItemListContainer({ greetings }) {
     setLoading(true);
 
     const collectionRef = categoryId
-      ? query(Collection(db, "products"), where("category", "===", categoryId))
+      ? query(collection(db, "products"), where("category", "==", categoryId))
       : collection(db, "products");
 
     getDocs(collectionRef)
