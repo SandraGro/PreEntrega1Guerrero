@@ -19,7 +19,7 @@ Before you begin, make sure you have the following tools installed:
 npm install
 ```
 
-3.  ** Set up environment variables:**
+3.  **Set up environment variables:**
 
 Create a .env file in the root of the project with the required environment variables. This file is not included in the repository to protect your credentials.
 .env
