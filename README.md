@@ -1,8 +1,42 @@
-# React + Vite
+# React Project with Vite, Firebase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a web application developed with React, using Vite as the build tool and Firebase for data storage.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before you begin, make sure you have the following tools installed:
+
+- [Node.js](https://nodejs.org/) (recommended: version 20 or higher)
+- [npm](https://www.npmjs.com/)
+
+## Installation
+
+1.  **Clone the repository:**
+  git clone https://github.com/SandraGro/PreEntrega1Guerrero.git
+
+2.   **Installl dependencies:**
+```shell
+npm install
+```
+
+3.  ** Set up environment variables:**
+
+Create a .env file in the root of the project with the required environment variables. This file is not included in the repository to protect your credentials.
+.env
+
+```
+VITE_FIREBASE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+VITE_FIREBASE_APP_ID=your_firebase_app_id
+```
+
+Start the development server:
+
+```shell
+npm run dev
+```
+
+
